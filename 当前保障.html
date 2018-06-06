@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>当前保障</title>
+<style type="text/css">
+    body{
+        overflow: hidden;
+    }
+    .conT{
+        position: absolute;
+        color: white;
+        font-size: 15px;
+        height: 100%;
+        width: 100%;
+        background: #787878;
+        z-index: 1002;
+    }
+    .conT .title{
+        line-height: 200%;
+        font-size: 15px;
+        width:auto;
+        height:10%;
+        background-color:#2E2839;
+    }
+
+    .conT .title .ti{
+        float:left;
+        text-indent:3% ;
+    }
+    .conT .title img{
+        margin-top: 100%;
+    }
+    .conT .title .close{
+        float:right;
+        margin-right: 2%;
+    }
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box10{
+  float:left;
+  background-color:#3C3647;
+  font-size:20px;
+  color:#FF0000;
+  text-align:center;
+  height:120px;
+  width:20%;
+  }
+</style>
+</head>
+<div id="test" class="conT">
+    <div class="title">
+        <span class="ti" >当前保障</span>
+        <span class="close"><a href="javascript:void(0)" onclick = "document.getElementById('test').style.display='none';"><img src="images/缩小符号.jpg" width="17px" height="15px" style="margin-top:5px"/></a></span>
+    </div>
+
+    <div id="menu0" style="width:100%; height:30% ; font-size:15px" ><b><center style="color:#54FF9F;"> 当前时段</center>
+
+        <div id="box1" >
+        <script>
+         var a1=parseInt(Math.random()*100);
+         var b1=document.getElementById("box1");
+         b1.innerHTML="保障架次"+"<a href=\"航班详情.html\">"+a1+"</a>";
+         b1.style.color='white';
+         b1.style.cssText+="text-align:center;lineheight:40px";
+        </script>
+        </div>
+
+        <div id="box2">
+        <script>
+         var a2=parseInt(Math.random()*100);
+         var b2=document.getElementById("box2");
+         b2.innerHTML="异常:"+a2;
+         b2.style.color='red';
+         b2.style.cssText+="text-align:center;lineheight:40px";
+        </script>
+        </div>
+
+        <div id="box3">
+        <script>
+         var a3=parseInt(Math.random()*100);
+         var b3=document.getElementById("box3");
+         b3.innerHTML= "预警:"+a3;
+         b3.style.color='yellow';
+         b3.style.cssText+="text-align:center;lineheight:40px";
+        </script>
+        </div>
+
+        <div id="box4">
+        <script>
+         var a4=parseInt(100*a1/(a1+a2+a3))/100;
+         var b4=document.getElementById("box4");
+         b4.innerHTML="放行率:"+a4;
+         b4.style.color='white';
+         b4.style.cssText+="text-align:center;lineheight:40px";
+        </script>
+        </div>
+
+        <div id="box5"><center>机位使用率：0%</center></div>
+    </b>
+    </div>
+
+    <div id="menu" style="width:100%; height:30% ; font-size:15px"><b><center style="color:#54FF9F;"><br> 下一时段</center>
+    <div id="box6">
+    <script>
+     var a6=parseInt(Math.random()*100);
+     var b6=document.getElementById("box6");
+     b6.innerHTML="进港航班:"+a6;
+     b6.style.color='white';
+     b6.style.cssText+="text-align:center;lineheight:40px";
+    </script>
+    </div>
+
+    <div id="box7">
+    <script>
+     var a7=parseInt(Math.random()*100);
+     var b7=document.getElementById("box7");
+     b7.innerHTML= "起降架次:"+a7;
+     b7.style.color='white';
+     b7.style.cssText+="text-align:center;lineheight:40px";
+    </script>
+    </div>
+
+    <div id="box8">
+    <script>
+     var a8=parseInt(Math.random()*100);
+     var b8=document.getElementById("box8");
+     b8.innerHTML="延误架次:"+a8;
+     b8.style.color='red';
+     b8.style.cssText+="text-align:center;lineheight:40px";
+    </script>
+    </div>
+
+    <div id="box9">
+    <script>
+     var a9=parseInt(Math.random()*100);
+     var b9=document.getElementById("box9");
+     b9.innerHTML="空闲机位:"+a9;
+     b9.style.color='white';
+     b9.style.cssText+="text-align:center;lineheight:40px";
+    </script>
+    </div>
+
+    <div id="box10"><center>机位使用率：0%</center></div>
+    </b>
+</div>
+
+</div>
+</body>
+</html>

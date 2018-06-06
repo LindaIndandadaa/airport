@@ -1,0 +1,144 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+    overflow: hidden;
+}
+.conT{
+	position: absolute; 
+	color: white;
+	font-size: 15px;
+	height: 600px;
+	width: 400px;
+	background-color:#3C3647;
+	z-index: 1002;
+	display:block;
+}
+.conT .title{
+	line-height: 300%;
+	font-size: 15px;
+	width:auto;
+	height:8%;
+	background-color:#2E2839;
+}
+
+.conT .title .ti{
+	float:left;
+	text-indent:3% ;
+	
+}
+.conT .title img{
+	margin-top: 100%;
+}
+.conT .title .close1{
+	float:right;
+	margin-right: 2%;
+}
+.conT ul{
+	
+	height: 92%;
+	
+	width: auto;
+	background-color:#3C3647;
+	overflow-y:auto;
+	overflow-x: hidden;
+}
+.conT ul li{
+	
+	margin-top:5%;
+	margin-left:4%;
+	height: 16%;
+	width: 90%;
+	background-color:#2E2839;
+	list-style: none;
+	
+}
+.conT .le{
+	
+	height: 100%;
+	width: 35px;
+	float:left;
+	background-color: #F02746;
+	text-align: center;
+	font-size: 15px;
+	line-height: 520%;
+}
+.conT .up{
+	width:auto;
+	line-height: 240%;
+}
+.conT img{
+	margin-left:3%;
+}
+.conT .bianhao{
+	margin-left: 3%;
+	
+}
+.conT .zhuangtai{
+	color:red;
+	margin-left:3%;
+}
+.conT .luxian{
+	margin-left:20%;
+}
+.conT .down{
+	width:auto;
+	line-height: 280%;
+}
+.conT .shijian{
+	margin-left: 15%;
+}
+.conT .dengdai{
+	margin-left: 18%;
+}
+
+
+
+
+
+.scroll::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+	
+    }
+.scroll::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+         -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: #535353;
+    }
+.scroll::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background: #EDEDED;
+    }
+
+.black_overlay{ 
+            display: none; 
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 100%; 
+            background-color: black; 
+            z-index:1000; 
+            -moz-opacity: 0.8; 
+            opacity:.80; 
+            filter: alpha(opacity=88); 
+        } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

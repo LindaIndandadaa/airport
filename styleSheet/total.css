@@ -1,0 +1,92 @@
+.buttonback{
+    margin:0 auto;
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#2F333E;
+    text-align:center;
+    overflow:hidden;
+}
+.butt1{
+    position:absolute;
+    top:10px;
+    left:5px;
+    float:left;
+}
+.butt2{
+    position:absolute;
+    top:35px;
+    left:5px;
+    float:left;
+}
+.butt3{
+    position:absolute;
+    top:60px;
+    left:5px;
+}
+.butt4{
+    position:absolute;
+    top:85px;
+    left:5px;
+}
+.previewDiv{
+    position: absolute;
+    top:10px;
+    left:80px;
+    height: 350px;
+    width: 400px;
+    display:none;
+}
+
+.baozhang{
+    position: absolute;
+    font-size: 15px;
+    top:10px;
+    left:485px;
+    height: 350px;
+    width: 500px;
+    display:none;
+}
+.xiaoxi{
+    position: absolute;
+    font-size: 15px;
+    top:10px;
+    left:995px;
+    height: 300px;
+    width: 350px;
+    display:none;
+}
+.hangban{
+    font-size: 15px;
+    height:500px;
+    width:900px;
+    display:none;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.plainnum {
+    text-align: center;
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    top: 400px;
+    left: 300px;
+    font-size: 7px;
+    font-color: #F0F8FF;
+    background: #c0c0c0;
+    text-align: center;
+    display: none;
+}
+.buttonback.butt1
+{
+    color:#EDEDED;
+    background: #787878;;
+}
+@media screen and (max-height: 200px) {
+    .plainnum {
+        font-size: 10px;
+    }
+}

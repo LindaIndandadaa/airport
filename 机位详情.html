@@ -1,0 +1,63 @@
+﻿<html>
+ <head>
+ 	<title>机位详情</title>
+    <link rel="stylesheet" href="styleSheet/style3.css"/>
+<script src="javaScript/jquery.min.js"></script>
+ </head>
+ <body>
+    <div id="test" class="conT" >
+
+<div class="title">
+    <span class="ti">机位详情</span>
+    <span class="close"><a href="javascript:void(0)" onclick = "document.getElementById('test').style.display='none';"><img src="images/缩小符号.jpg" width="18px" height="18px" style="margin-top: 5px" /></a></span>
+</div>
+ 	<div style="width: 100%;height:100%; background: #696969">
+    <div  id="aa" style="width: 100%;height: 15%">
+    <script type="text/javascript">
+    	    var data1=["B: ","C: ","E: "];
+        	var data2=[2,13,3];
+        	var data3=[["类别","机位号","远/近机位"],["B",12,"远机位"],["C",34,"近机位"],["C",14,"远机位"]]; 
+        	var zz=document.getElementById("aa");
+        	var sh="";
+        	for(var i=0;i<3;i++)
+        	{  
+        		sh=sh+"<font color=\"white\">"+data1[i]+"</font>"+"<font color=\"#00FFFF\">"+data2[i]+"</font> ";
+        	}
+ 		    //zz.innerHTML="<a href=\"当前态势.html\">"+a1+d1"</a>";
+ 		    zz.innerHTML=sh;
+ 		    //document.write(a1);
+            //zz.style.color="white";
+            //$("zz").css("text-align:center","line-height:880px;");
+ 		    zz.style.cssText+="text-align:center;line-height:60px;";
+        </script>
+    </div>
+ 	<div id="bb" style="width: 100%;height: 60% ">
+ 		<script type="text/javascript">
+ 			
+        var row1=4;//获取属性值
+        var col1=3;//获取属性值
+        var div1=document.getElementById("bb");
+        var tab="<div class=\"table\">";
+        //循环行
+        for(var ii=0;ii<3;ii++)
+            tab=tab+"<div class=\"td\" style=\" background:#4F4F4F\">"+data3[0][ii]+"</div>";
+        for(var i=2;i<=row1;i++)
+        {
+            tab+="<div class=\"tr\">";
+            //循环列
+            for(var j=1;j<=col1;j++)
+            {
+                tab=tab+"<div class=\"td\">"+data3[i-1][j-1]+"</div>";
+            }
+            tab+="</div>";
+        }
+        tab+="</div>"
+         div1.innerHTML=tab;
+    
+
+ 		</script>
+ 	</div>
+ </div> 
+</div>
+ </body>
+</html>
